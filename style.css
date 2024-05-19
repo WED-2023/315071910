@@ -1,7 +1,324 @@
-#menu
-{
-	position: fixed;
+/* Style the background */
+body {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+}
+
+/* Style the paragraphs */
+p {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-size: 23px;
+}
+
+/* Style h1 headings in welcomeSection class */
+.welcomeSection h1 {
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	color: #2f7bb6dc;
+	font-size: 80px;
+	margin-bottom: 20px;
+	margin-top: 80px;
+}
+
+/* Style h2 headings in section class */
+.section h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive; 
+    color: #5C6BC0; 
+    background-color: #bbdcf3; 
+    box-shadow: 0 0 14px 8px rgba(196, 234, 247, 0.933); 
+    font-weight: bold;
+    font-size: 70px; 
+    margin: 0; 
+}
+
+#about p {
+    font-family: 'Verdana', sans-serif; /* Clear and professional sans-serif font */
+    color: #333; /* Dark grey color for good readability */
+    font-size: 25px; /* Large font size for better visibility */
+    line-height: 1.6; /* Spacing between lines for improved readability */
+    text-align: center; /* Centers the text within the paragraph */
+    padding: 0 20px; /* Padding on left and right for better text alignment */
+    margin-bottom: 20px; 
+}
+
+
+/* Center objects */
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style the dividers */
+.centerDividers {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+/* Make the navigation bar fixed and stay on top and in front */
+.topnav {
+    float: left;
+    text-align: center;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Style the links inside the navigation bar */
+.topnav li {
+    display: inline-block;
+    padding: 1.5% 3%; 
+    font-size: 24px; 
+}
+
+.topnav li a {
+    color: #0D47A1; 
+    font-family: 'Courier New', monospace; 
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Change the links on hover */
+.topnav a:hover {
+    color: #102A43; 
+    font-style: italic;
+    font-weight: bold;
+    transform: translateY(-10%); 
+}
+
+/* Style the logo in the navigation bar */
+.topnav img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 3%;
+    margin-top: 0.5%; 
+}
+
+
+
+.photoGallery {
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    max-width: 1400px;
+    max-height: 450px;
+    margin-bottom: 3%;
+}
+.photos {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    transform: scale(0.95);
+    border: 5px solid #ffffff;
+}
+/* Change the photos on hover */
+.photoGallery :hover {
+    z-index: 1;
+    transform: scale(1.3);
+    box-shadow: 0 0 14px 8px rgba(0, 140, 186, 0.5);
+}
+
+
+/* Style qr code */
+.qrCode {
+	position: relative;
+}
+/* Style qr code on hover */
+.qrCode :hover {
+    transform: scale(1.2);
+	box-shadow: 0 0 14px 8px rgba(0, 140, 186, 0.5);
+}
+
+
+
+/* General style for all tables */
+table.center {
+    width: 90%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); 
+    background-color: #ffffff; 
+}
+
+/* Style for table headers */
+table.center th {
+    background-color: #6a7ba2; 
+    color: #ffffff; 
+    font-family: 'Segoe UI', sans-serif; 
+    padding: 12px 15px; 
+    border: 1px solid #ddd;
+}
+
+/* Style for table data cells */
+table.center td {
+    text-align: center; 
+    padding: 10px 12px; 
+    border: 1px solid #ddd; 
+    color: #333;
+    font-size: 16px; 
+}
+
+/* Adds striping to rows for better readability */
+table.center tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect to highlight rows on mouse-over */
+table.center tr:hover {
+    background-color: #e2e2f2; 
+}
+
+/* Styling for links or interactive elements within tables, if any */
+table.center a {
+    color: #5c67a3; 
+    text-decoration: none; 
+}
+
+table.center a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+
+  /* Zebra striped table rows */
+tr:nth-child(even) {
+	background-color: #e4f1f9;
+}
+/* Style cells */
+td, th {
+	font-family:'Segoe UI';
+	text-align: center;
+	padding: 7px;
+}
+/* Change cells on hover */
+td:hover, th:hover{
+	background-color: #cfe6f5;
+	box-shadow: 0 0 14px 8px rgb(212, 234, 241);
+	z-index: 1;
+}
+
+/* Style inputs with type="email"/"text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
 	width: 100%;
-	height: 35px;
-	background: white;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 14px;
+	resize: vertical
+}
+/* Style the submit button */
+input[type=submit] {
+	background-color: #0436aa;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* Change submit button color on hover */
+input[type=submit]:hover {
+	background-color: #456fa0;
+}
+/* Add the contact form a background color and padding */
+.container {
+	margin: auto;
+	width: 500px;
+	border-radius: 5px;
+	background-color: #a8cce9;
+	padding: 20px;
+}
+
+.intro-text {
+    font-family: 'Courier New', monospace; 
+    color: #7a5f33; 
+    font-size: 30px; 
+    line-height: 1.6; 
+    text-align: center; 
+    text-decoration: underline; 
+}
+
+.diff-text {
+    font-family: 'Courier New', monospace; 
+    color: #7a5f33; 
+    font-size: 30px; 
+    line-height: 1.6; 
+    text-align: center; 
+    text-decoration: underline;  
+}
+
+.qr-text {
+    font-family: 'Roboto', sans-serif; 
+    color: #007BFF; 
+    font-size: 16px; 
+    line-height: 1.4; 
+    margin: 10px 0; 
+    padding: 5px 0; 
+}
+
+
+
+.container {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-size: 16px; 
+    color: #333; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+/* Input and Textarea styling */
+input[type="email"], input[type="text"], textarea {
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: none; 
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    background-color: #007bff; 
+    color: white; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3; 
 }
