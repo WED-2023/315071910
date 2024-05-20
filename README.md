@@ -10,7 +10,7 @@ This website is dedicated to Carl Fredricksen, the beloved old man from the movi
 
 ## Website Sections
 - **About Me**
-  - This section offers an insightful summary of Sir Carl Fredricksen and his illustrious life and history.
+  - This section offers an insightful summary of Carl Fredricksen and his illustrious life and history.
 - **Photos**
   - This part of the site features a curated slideshow of photographs highlighting significant moments from Carl Fredricksen's life.
 - **Playlist**
