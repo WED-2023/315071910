@@ -1,8 +1,6 @@
-# Web Environment Development - assignment 1
+# Web Environment Development - assignment1
 
 ## Personal Information
-
-Name: Amit Avraham
 
 ID: 315071910
 
