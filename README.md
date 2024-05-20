@@ -1,4 +1,4 @@
-# Web Development Environments Course
+# Web Environment Development - assignment 1
 
 ## Personal Information
 
